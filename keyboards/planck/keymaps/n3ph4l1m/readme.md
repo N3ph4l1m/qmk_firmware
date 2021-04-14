@@ -1,2 +1,3 @@
-# The Default Planck Layout
+# Updated Planck Layout
+-- Space and return on bottom row middle two keys.
 
