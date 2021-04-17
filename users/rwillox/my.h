@@ -78,7 +78,7 @@ enum user_keycodes {
 #define KC_MDSH S(LALT(KC_MINS))
 
 // Window manager keys
-#define WM_FULL LALT(LGUI(KC_F))
+#define WM_FULL LGUI(KC_F)
 #define WM_NEXT LCTL(LALT(LGUI(KC_RGHT)))
 #define WM_PREV LCTL(LALT(LGUI(KC_LEFT)))
 #define WM_NW   LCTL(LGUI(KC_LEFT))
@@ -144,7 +144,7 @@ enum user_keycodes {
 
 #define _________________RAISE_L1__________________ KC_F11,  KC_F12,  KC_F13,  KC_F14,  KC_F15
 #define _________________RAISE_L2__________________ KC_EXLM, KC_AT,   KC_HASH, KC_DLR,  KC_PERC
-#define _________________RAISE_L3__________________ KC_UNDS, KC_PLUS, KC_TILD, KC_PIPE, KC_COLN
+#define _________________RAISE_L3__________________ KC_UNDS, KC_PLUS, KC_TILD, S(KC_NUBS), KC_COLN
 
 #define _________________RAISE_R1__________________ KC_F16,  KC_F17,  KC_F18,  KC_F19,  KC_F20
 #define _________________RAISE_R2__________________ KC_CIRC, KC_AMPR, KC_ASTR, KC_LCBR, KC_RCBR
@@ -156,7 +156,7 @@ enum user_keycodes {
 
 #define __________________NAV_R1___________________ XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX
 #define __________________NAV_R2___________________ KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, XXXXXXX
-#define __________________NAV_R3___________________ LALT(KC_LEFT), LALT(KC_DOWN), LALT(KC_UP), LALT(KC_RGHT), XXXXXXX
+#define __________________NAV_R3___________________ LCTL(LALT(KC_LEFT)), LCTL(LALT(KC_DOWN)), LCTL(LALT(KC_UP)), LCTL(LALT(KC_RGHT)), XXXXXXX
 
 #define __________________GUI_L1___________________ KC_BTN2, KC_MS_U, KC_BTN1, KC_WH_D, XXXXXXX
 #define __________________GUI_L2___________________ KC_MS_L, KC_MS_D, KC_MS_R, KC_WH_U, XXXXXXX
