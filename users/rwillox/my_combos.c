@@ -48,6 +48,7 @@ enum combo_events {
   MY_COMBO_A_T,
   MY_COMBO_A_W,
   MY_COMBO_B_C,
+  MY_COMBO_C_A,
   MY_COMBO_C_W,
   MY_COMBO_D_L,
   MY_COMBO_E_G,
@@ -98,6 +99,7 @@ const uint16_t PROGMEM combo_A_N[] = { KC_A, KC_N, COMBO_END };
 const uint16_t PROGMEM combo_A_T[] = { KC_A, KC_T, COMBO_END };
 const uint16_t PROGMEM combo_A_W[] = { KC_A, KC_W, COMBO_END };
 const uint16_t PROGMEM combo_B_C[] = { KC_B, KC_C, COMBO_END };
+const uint16_t PROGMEM combo_C_A[] = { KC_C, KC_A, COMBO_END };
 const uint16_t PROGMEM combo_C_W[] = { KC_C, KC_W, COMBO_END };
 const uint16_t PROGMEM combo_D_L[] = { KC_D, KC_L, COMBO_END };
 const uint16_t PROGMEM combo_E_G[] = { KC_E, KC_G, COMBO_END };
@@ -152,6 +154,7 @@ combo_t key_combos[COMBO_COUNT] = {
   [MY_COMBO_A_T] = COMBO_ACTION(combo_A_T),
   [MY_COMBO_A_W] = COMBO_ACTION(combo_A_W),
   [MY_COMBO_B_C] = COMBO_ACTION(combo_B_C),
+  [MY_COMBO_C_A] = COMBO_ACTION(combo_C_A),
   [MY_COMBO_C_W] = COMBO_ACTION(combo_C_W),
   [MY_COMBO_D_L] = COMBO_ACTION(combo_D_L),
   [MY_COMBO_E_G] = COMBO_ACTION(combo_E_G),
@@ -341,6 +344,11 @@ void process_combo_event(uint16_t combo_index, bool pressed) {
     case MY_COMBO_B_C:
       if (pressed) {
         SEND_CAP_STRING("because ", "Because ");
+      }
+      break;
+    case MY_COMBO_C_A:
+      if (pressed) {
+         SEND_STRING("Issue summary:  \nRoot cause and resolution summary: ");
       }
       break;
     case MY_COMBO_C_W:

@@ -17,7 +17,7 @@
 #pragma once
 
 // Combo feature timeout (defaults to TAPPING_TERM)
-#define COMBO_TERM 50
+#define COMBO_TERM 35
 
 // Size of combo_events enum.
-#define COMBO_COUNT 52
+#define COMBO_COUNT 53

@@ -24,10 +24,12 @@
 #else
 #include "keymap_plover.h"
 #endif
+//
+// #ifdef RGB_MATRIX_ENABLE
+// #include "rgb_matrix.h"
+// #endif
 
-#ifdef RGB_MATRIX_ENABLE
-#include "rgb_matrix.h"
-#endif
+#include "keymap_uk.h"
 
 enum user_layers {
   QWERTY_LAYER,
@@ -53,6 +55,7 @@ enum user_keycodes {
   SEND_VERSION,
   NEW_SAFE_RANGE
 };
+
 
 #define LOWER MO(LOWER_LAYER)
 #define RAISE MO(RAISE_LAYER)
@@ -136,7 +139,7 @@ enum user_keycodes {
 
 #define _________________LOWER_L1__________________ _________________FUNCTION_L________________
 #define _________________LOWER_L2__________________ _________________NUMBERS_L_________________
-#define _________________LOWER_L3__________________ KC_MINS, KC_EQL,  KC_GRV,  KC_BSLS, KC_COLN
+#define _________________LOWER_L3__________________ KC_MINS, KC_EQL,  KC_GRV,  UK_BSLS, KC_COLN
 
 #define _________________LOWER_R1__________________ _________________FUNCTION_R________________
 #define _________________LOWER_R2__________________ _________________NUMBERS_R_________________
@@ -144,7 +147,7 @@ enum user_keycodes {
 
 #define _________________RAISE_L1__________________ KC_F11,  KC_F12,  KC_F13,  KC_F14,  KC_F15
 #define _________________RAISE_L2__________________ KC_EXLM, KC_AT,   KC_HASH, KC_DLR,  KC_PERC
-#define _________________RAISE_L3__________________ KC_UNDS, KC_PLUS, KC_TILD, S(KC_NUBS), KC_COLN
+#define _________________RAISE_L3__________________ KC_UNDS, KC_PLUS, UK_TILD, S(KC_NUBS), KC_COLN
 
 #define _________________RAISE_R1__________________ KC_F16,  KC_F17,  KC_F18,  KC_F19,  KC_F20
 #define _________________RAISE_R2__________________ KC_CIRC, KC_AMPR, KC_ASTR, KC_LCBR, KC_RCBR
