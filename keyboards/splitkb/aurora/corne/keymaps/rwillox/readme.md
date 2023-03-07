@@ -1,10 +1,10 @@
-# x123 Keymap for the Aurora Corne
+# rwillox Keymap for the Aurora Corne
 
 This keymap is based on many concepts from Dreymar's big bag theory (see https://dreymar.colemak.org/index.html), tweaked a bit for my own preferences and adopted to the Aurora Corne.
 
 ## Features
 
-- Supports both QWERTY and COLEMAK layouts
+- Supports QWERTY layout
 - Layouts switchable on the fly
 - Homerow mods can be toggled (very useful for gaming)
 - Normal capslock key location has been replaced with backspace for ergonomics. Note that backspace is also placed in it's normal location for the QWERTY layouts (useful for letting others test the keyboard/layout)
@@ -25,17 +25,6 @@ Basic QWERTY with homerow mods disabled.
 
 ![QWERTY_NOHOMEROW](https://i.imgur.com/2C1IGrX.png)
 
-### COLEMAK
-
-COLEMAK with homerow mods enabled.
-
-![COLEMAK](https://i.imgur.com/u5G6YWn.png)
-
-### COLEMAK_NOHOMEROW
-
-COLEMAK with homerow mods disabled.
-
-![COLEMAK_NOHOMEROW](https://i.imgur.com/enSnhcA.png)
 
 ### LOWER
 
