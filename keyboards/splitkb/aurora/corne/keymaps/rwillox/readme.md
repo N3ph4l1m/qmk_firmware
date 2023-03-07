@@ -1,6 +1,6 @@
 # rwillox Keymap for the Aurora Corne
 
-This keymap is based on many concepts from Dreymar's big bag theory (see https://dreymar.colemak.org/index.html), tweaked a bit for my own preferences and adopted to the Aurora Corne.
+This keymap is based on the x123 keymap and many concepts from Dreymar's big bag theory (see https://dreymar.colemak.org/index.html), tweaked a bit for my own preferences and adapted to the Aurora Corne. UK keymap keys for pipe hash and backslash have been added to the lower layer. 
 
 ## Features
 
