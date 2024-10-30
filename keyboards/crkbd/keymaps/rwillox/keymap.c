@@ -55,11 +55,11 @@ enum custom_keycodes {
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [L_DEFAULT] = LAYOUT_split_3x6_3(
   //,-----------------------------------------------------.                    ,-----------------------------------------------------.
-       KC_TAB,    KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,                         KC_Y,    KC_U,    KC_I,    KC_O,   KC_P,  KC_BSPC,
+       KC_TAB,    KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,                      KC_Y,    KC_U,    KC_I,    KC_O,   KC_P,  KC_BSPC,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-MT(MOD_LCTL,KC_BSPC), LSFT_KA, LCTL_KS, LGUI_KD, LALT_KF,    KC_G,                         KC_H, RALT_KJ, RGUI_KK, RCTL_KL, RS_SCLN, KC_QUOT,
+MT(MOD_LCTL,KC_BSPC), LSFT_KA, LCTL_KS, LGUI_KD, LALT_KF,    KC_G,               KC_H, RALT_KJ, RGUI_KK, RCTL_KL, RS_SCLN, KC_QUOT,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-MT(MOD_LSFT, KC_CAPS),    KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,                KC_N,    KC_M, KC_COMM,  KC_DOT, KC_SLSH, MT(MOD_LSFT, KC_CAPS),
+MT(MOD_LSFT, KC_CAPS),    KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,              KC_N,    KC_M, KC_COMM,  KC_DOT, KC_SLSH, MT(MOD_LSFT, KC_CAPS),
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
                                           KC_LALT,    MO(L_LOWER),  KC_SPC,     KC_ENT,    MO(L_RAISE), OSL(L_ADJUST)
                                       //`--------------------------'  `--------------------------'
